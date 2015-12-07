@@ -27,7 +27,7 @@ app.post('/links', function(req, res){
 
 app.get('/links', function(req, res){
 	db.link.findAll({order: 'count DESC',
-						limit: 5}).
+						limit: 10}).
 	then(function(list){
 		var hashList = [];
 		list.forEach(function(item){
