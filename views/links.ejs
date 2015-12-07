@@ -1,12 +1,17 @@
-<h1>Something to render</h1>
-	<ol>
-	<%  var i = 0;
-		var hashList = hashList;
-		list.forEach(function(item){ %>
-		<li><a href="http://localhost:3000/<%= hashList[i] %>">
-		http://localhost:3000/<%= hashList[i] %></a>
-		:    <%= item.dataValues.count %> Clicks!</li>
-		<% i++; %>
-	<% }); %>
+<div class="container links">
+	<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+		
+		<h1>URL Voodoo's Greatest Clicks</h1>
+			<ol>
+			<%  var i = 0;
+				var hashList = hashList;
+				list.forEach(function(item){ %>
+				<li><a href="http://localhost:3000/<%= hashList[i] %>">
+				http://localhost:3000/<%= hashList[i] %></a>
+				:    <%= item.dataValues.count %> Clicks!</li>
+				<% i++; %>
+			<% }); %>
 
-	</ol>
+			</ol>
+	</div>
+</div>
