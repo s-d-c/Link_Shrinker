@@ -54,7 +54,7 @@ app.get('/:hash', function(req, res){
 	var id = hashids.decode(hash);
 	db.link.find({where: {id: id}})
 	.then(function(link){
-		newCount = link.count + 1;
+		var newCount = link.count + 1;
 		link.updateAttributes({
 			count: newCount
 		})

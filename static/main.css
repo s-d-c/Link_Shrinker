@@ -3,38 +3,70 @@
 }
 
 body {
-	font-size: 3em;
+	font-size: 1.2em;
+	background-color: rgba(234, 230, 242, .4);
+	color: rgba(96, 15, 151, .9);
 }
 
 h1 {
-	font-size: 2.5em;
+	margin: 1.5rem 0 2.5rem;
+	padding: 0 .5em;
+	font-family: 'Flamenco', cursive;
+	font-weight: bold;
+	font-size: 3em;
 	text-align: center;
 }
 
 .wrapper {
 	width: 65%;
 	margin: 0 auto;
-	min-height: calc(100vh - 42px);
+	min-height: calc(100vh - 166px);
 }
 
 #intro p {
 	padding: 1em 2em;
-	font-size: .8em;
-	background-color: purple;
-	color: white;
+	font-size: .7em;
+	background-color: rgba(96, 15, 151, .9);
+	color: rgb(248, 182, 25);
 }
 
 #cta p {
-
+	text-align: center;
+	padding: .5em 1em;
 }
 
 #entry-form {
 	text-align: center;
 }
 
+#entry-form label,
+#entry-form input,
+#entry-form button {
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#entry-form button {
+	margin-top: .6em;
+	font-size: 1.4em;
+	font-weight: bold;
+	font-family: 'Flamenco', cursive;
+	border: none;
+	padding: .3em 0;
+	background-color: rgba(6, 188, 64, .8);
+}
+
+#entry-form label {
+	margin-bottom: .5em;
+	font-family: 'Flamenco', cursive;
+	font-size: 1.4em;
+	line-height: .9;
+}
+
 #main-footer {
 	float: left;
 	width: 100%;
-	padding: 1em 0;
+	padding: .7em 0;
 	text-align: center;
 }
