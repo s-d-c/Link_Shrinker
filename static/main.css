@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 3em;
+}
+
+h1 {
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.wrapper {
+	width: 65%;
+	margin: 0 auto;
+	min-height: calc(100vh - 42px);
+}
+
+#intro p {
+	padding: 1em 2em;
+	font-size: .8em;
+	background-color: purple;
+	color: white;
+}
+
+#cta p {
+
+}
+
+#entry-form {
+	text-align: center;
+}
+
+#main-footer {
+	float: left;
+	width: 100%;
+	padding: 1em 0;
+	text-align: center;
+}
