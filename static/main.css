@@ -18,11 +18,42 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	font-family: 'Flamenco', cursive;
+	text-align: center;
+	font-size: 2em;
+}
+
+h2 a {
+	font-size: 2rem;
+}
+
+h3 {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
 .wrapper {
 	width: 65%;
 	margin: 0 auto;
 	min-height: calc(100vh - 166px);
+	min-width: 300px;
 }
+
+#main-footer {
+	font-family: 'Flamenco', cursive;
+	float: left;
+	width: 100%;
+	padding: .7em 0;
+	text-align: center;
+}
+
+/* Index page ------------------------------*/
 
 #intro p {
 	padding: 1em 2em;
@@ -65,9 +96,37 @@ h1 {
 	line-height: .9;
 }
 
-#main-footer {
-	float: left;
-	width: 100%;
-	padding: .7em 0;
+/* Links list page -------------------------*/
+
+#click-list ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#click-list li {
 	text-align: center;
 }
+
+.link-count {
+	margin: .5em 0;
+}
+
+.link-count a {
+	font-size: .8em;
+}
+
+.link-count p {
+	margin-bottom: 0;
+}
+
+@media (min-width: 400px) {
+	body {
+		font-size: 1.8em;
+	}
+
+	.wrapper {
+		width: 90%;
+		min-height: calc(100vh - 208px);
+	}
+}
+

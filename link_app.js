@@ -58,7 +58,6 @@ app.get('/:hash', function(req, res){
 		link.updateAttributes({
 			count: newCount
 		})
-		
 		res.redirect(link.url);
 	})
 });

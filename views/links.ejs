@@ -1,16 +1,20 @@
-<div>
 	<div class="wrapper">
-		
-		<h2>URL Voodoo's Greatest Clicks</h2>
-			<ol>
-			<%  var i = 0;
-				var hashList = hashList;
-				list.forEach(function(item){ %>
-				<li><a href="https://voodoo-links.herokuapp.com/<%= hashList[i] %>">
-				https://voodoo-links.herokuapp.com/<%= hashList[i] %></a>
-				:    <%= item.dataValues.count %> Clicks!</li>
-				<% i++; %>
-			<% }); %>
-			</ol>
+		<div id="click-list">	
+			<h2>URL Voodoo's Greatest Clicks</h2>
+				<ul>
+					<%  var i = 0;
+						var hashList = hashList;
+						list.forEach(function(item){ %>
+						<li>
+							<div class="link-count"> 
+								<p><%= item.dataValues.count %> Clicks!</p>
+								<a href="http://localhost:3000/<%= hashList[i] %>" target="_blank">
+									https://voodoo-links.herokuapp.com/<%= hashList[i] %>
+								</a>
+							</div>
+						</li>
+						<% i++; %>
+					<% }); %>
+			</ul>
 	</div>
 </div>
