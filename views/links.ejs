@@ -1,13 +1,13 @@
 	<div class="wrapper">
 		<div id="click-list">	
-			<h2>URL Voodoo's Greatest Clicks</h2>
+			<h2>Voodoo Link's Greatest Clicks</h2>
 				<ul>
 					<%  var i = 0;
 						var hashList = hashList;
 						list.forEach(function(item){ %>
 						<li>
 							<div class="link-count"> 
-								<p><%= item.dataValues.count %> Clicks!</p>
+								<p>Click Count: <%= item.dataValues.count %></p>
 								<a href="http://localhost:3000/<%= hashList[i] %>" target="_blank">
 									https://voodoo-links.herokuapp.com/<%= hashList[i] %>
 								</a>

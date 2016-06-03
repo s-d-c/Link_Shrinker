@@ -3,14 +3,15 @@
 }
 
 body {
+	font-family: 'Helvetica Neue', sans-serif;
 	font-size: 1.2em;
 	background-color: rgba(234, 230, 242, .4);
 	color: rgba(96, 15, 151, .9);
 }
 
 h1 {
-	/*background-color: rgb(30, 9, 68);*/
-	margin: 1.5rem 0 2.5rem;
+	color: rgba(30, 9, 68, .7);
+	margin: 1.5rem 0 1.5rem;
 	padding: 0 .5em;
 	font-family: 'Flamenco', cursive;
 	font-weight: bold;
@@ -19,13 +20,21 @@ h1 {
 }
 
 h2 {
+	margin-top: 0;
 	font-family: 'Flamenco', cursive;
 	text-align: center;
 	font-size: 2em;
 }
 
-h2 a {
-	font-size: 2rem;
+#show-link a {
+	color: rgba(6, 188, 64, 1);
+	font-size: .6em;
+}
+
+#show-link {
+	padding: 1em;
+	background-color: rgba(96, 15, 151, .9);
+	color: rgb(248, 182, 25);
 }
 
 h3 {
@@ -39,10 +48,10 @@ a:visited {
 }
 
 .wrapper {
-	width: 65%;
+	width: 80%;
 	margin: 0 auto;
-	min-height: calc(100vh - 166px);
-	min-width: 300px;
+	min-height: calc(100vh - 152px);
+	min-width: 280px;
 }
 
 #main-footer {
@@ -57,7 +66,6 @@ a:visited {
 
 #intro p {
 	padding: 1em 2em;
-	font-size: .7em;
 	background-color: rgba(96, 15, 151, .9);
 	color: rgb(248, 182, 25);
 }
@@ -98,6 +106,12 @@ a:visited {
 
 /* Links list page -------------------------*/
 
+#click-list {
+	padding: 1em;
+	background-color: rgba(96, 15, 151, .9);
+	color: rgb(248, 182, 25);
+}
+
 #click-list ul {
 	list-style: none;
 	padding-left: 0;
@@ -112,6 +126,7 @@ a:visited {
 }
 
 .link-count a {
+	color: rgba(6, 188, 64, 1);
 	font-size: .8em;
 }
 
@@ -125,8 +140,17 @@ a:visited {
 	}
 
 	.wrapper {
-		width: 90%;
+		width: 87%;
 		min-height: calc(100vh - 208px);
 	}
 }
 
+@media (min-width: 600px) {
+	body {
+		font-size: 2.6em;
+	}
+
+	.wrapper {
+		width: 75%;
+	}
+}
